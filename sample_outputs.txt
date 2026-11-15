@@ -1,0 +1,51 @@
+CLASS MARKS ANALYZER – SAMPLE TEST CASES
+==========================================
+
+TEST CASE 1: Normal Input
+Input:
+40 50 60 70 80
+
+Expected output:
+Mean: 60.00 | Median: 60.00
+Max: 80 | Min: 40 | Std Dev: 14.14
+Passed: 5 of 5
+
+
+TEST CASE 2: Boundary / Minimum Input
+Input:
+75
+
+Expected output:
+Mean: 75.00 | Median: 75.00
+Max: 75 | Min: 75 | Std Dev: 0.00
+
+
+TEST CASE 3: Invalid Input
+
+(a) Input:
+50 abc 70
+
+Expected output:
+Invalid marks 'abc'. Enter numbers only.
+
+(b) Input:
+50 105 70
+
+Expected output:
+Marks must be between 0 and 100.
+
+
+TEST CASE 4: Different Valid Scenario
+Input:
+25 50 75 100
+
+Expected output:
+Mean: 62.50 | Median: 62.50 | Std Dev: 27.95
+Passed: 3 | Failed: 1 | Pass percentage: 75.00%
+Above average: 2
+
+
+Note:
+- The pass mark is 40, inclusive.
+- Standard deviation is the population value (np.std default).
+- Above-average count includes only marks strictly greater than the mean.
